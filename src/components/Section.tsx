@@ -1,8 +1,14 @@
 import { ReactNode } from "react";
 
 /** Small uppercase label shown above a section title. */
-export function Eyebrow({ children }: { children: ReactNode }) {
-  return <p className="eyebrow text-terracotta">{children}</p>;
+export function Eyebrow({
+  children,
+  className = "",
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  return <p className={`eyebrow text-terracotta ${className}`}>{children}</p>;
 }
 
 /** A page hero band with a centered title and optional subtitle. */

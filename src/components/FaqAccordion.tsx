@@ -4,7 +4,7 @@ import { useState } from "react";
 import { faqs } from "@/lib/content";
 
 export function FaqAccordion() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <div className="mx-auto max-w-3xl divide-y divide-gold/20 border-y border-gold/20">
