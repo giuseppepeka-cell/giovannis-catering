@@ -23,7 +23,8 @@ export const metadata: Metadata = {
     default: `${site.name} — Catering Italiano para Eventos`,
     template: `%s — ${site.name}`,
   },
-  description: site.tagline,
+  description:
+    "Catering italiano para eventos en Xalapa: pizzas al horno de leña preparadas en vivo, pastas, buffet y food truck para bodas, eventos corporativos y celebraciones.",
 };
 
 export default function RootLayout({
