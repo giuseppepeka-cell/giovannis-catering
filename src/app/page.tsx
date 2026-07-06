@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <>
       {/* ---------------- HERO ---------------- */}
-      <section className="relative overflow-hidden bg-[#3d2a1c] text-cream">
+      <section className="relative overflow-hidden bg-forest-dark text-cream">
         {/* Hero background photo */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -33,13 +33,13 @@ export default function Home() {
           alt=""
           className="absolute inset-0 h-full w-full object-cover"
         />
-        {/* Brown gradient: solid on the left, fading to reveal the photo on the right (all sizes) */}
+        {/* Green gradient: solid on the left, fading to reveal the photo on the right (all sizes) */}
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, #3d2a1c 0%, #3d2a1c 25%, rgba(61,42,28,0.85) 45%, rgba(61,42,28,0) 80%)",
+              "linear-gradient(to right, #163126 0%, #163126 25%, rgba(22,49,38,0.85) 45%, rgba(22,49,38,0) 80%)",
           }}
         />
         <Container className="relative py-24 sm:py-32">
