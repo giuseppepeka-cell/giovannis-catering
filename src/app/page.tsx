@@ -55,7 +55,10 @@ export default function Home() {
                 </>
               )}
             </h1>
-            <p className="mt-6 max-w-xl text-lg text-cream/80">{hero.subtitle}</p>
+            <p className="mt-4 text-sm italic text-gold-light sm:text-base">
+              {site.heritage}
+            </p>
+            <p className="mt-5 max-w-xl text-lg text-cream/80">{hero.subtitle}</p>
             <div className="mt-9 flex flex-wrap gap-4">
               <a
                 href={whatsappHref}
@@ -96,7 +99,6 @@ export default function Home() {
                 {hero.secondaryCta.label}
               </Link>
             </div>
-            <p className="mt-8 text-sm italic text-gold-light">{site.heritage}</p>
           </div>
         </Container>
       </section>

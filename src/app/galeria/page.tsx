@@ -32,22 +32,6 @@ function getGalleryImages() {
     });
 }
 
-// Repeating pattern of tile sizes for the collage. col-span only kicks in at
-// sm+ (mobile stays 2 columns with the occasional tall accent).
-const SPANS = [
-  "sm:col-span-2 sm:row-span-2", // big feature
-  "",
-  "row-span-2", // tall
-  "",
-  "sm:col-span-2", // wide
-  "",
-  "row-span-2", // tall
-  "",
-  "sm:col-span-2 sm:row-span-2", // big feature
-  "",
-  "",
-];
-
 export default function GaleriaPage() {
   const images = getGalleryImages();
 
@@ -70,19 +54,19 @@ export default function GaleriaPage() {
             </p>
           </div>
         ) : (
-          <div className="grid auto-rows-[150px] grid-flow-row-dense grid-cols-2 gap-3 sm:auto-rows-[190px] sm:grid-cols-3 lg:grid-cols-4">
-            {images.map((img, i) => (
+          // Masonry (CSS columns): photos pack into columns at their natural
+          // aspect ratio — no gaps at any screen size, and nothing is cropped.
+          <div className="columns-2 gap-3 sm:columns-3 lg:columns-4">
+            {images.map((img) => (
               <div
                 key={img.src}
-                className={`group overflow-hidden rounded-xl border border-gold/20 bg-cream-deep ${
-                  SPANS[i % SPANS.length]
-                }`}
+                className="group mb-3 break-inside-avoid overflow-hidden rounded-xl border border-gold/20 bg-cream-deep"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={img.src}
                   alt={img.alt}
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
             ))}
