@@ -21,7 +21,7 @@ export default function PaquetesPage() {
         eyebrow="Paquetes"
         title="Nuestros paquetes"
         subtitle="Elige el que mejor se adapte a tu evento. Todos son adaptables según tus invitados y tu menú."
-        image="/hero-paquetes.png"
+        image="/hero-paquetes.jpg"
       />
 
       <Container className="py-16 sm:py-20">

@@ -35,7 +35,7 @@ export default function MenuPage() {
         eyebrow="Menú de catering"
         title="Nuestro menú para eventos"
         subtitle={menu.intro}
-        image="/hero-menu.png"
+        image="/hero-menu.jpg"
       />
 
       <Container className="py-16 sm:py-20">
