@@ -14,6 +14,7 @@ export default function UbicacionesPage() {
         eyebrow="Ubicaciones"
         title="Encuéntranos"
         subtitle="Visita cualquiera de nuestras sucursales o pide nuestro catering a tu evento."
+        image="/hero-ubicaciones.png"
       />
 
       <Container className="py-16 sm:py-20">

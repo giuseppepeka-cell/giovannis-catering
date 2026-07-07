@@ -41,6 +41,8 @@ export default function GaleriaPage() {
         eyebrow="Galería"
         title="Momentos servidos a la mesa"
         subtitle="Un vistazo a nuestros eventos, platillos y servicio en vivo."
+        image="/hero-galeria.png"
+        imagePosition="50% 68%"
       />
       <Container className="py-16 sm:py-20">
         {images.length === 0 ? (
