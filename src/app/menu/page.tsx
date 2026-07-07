@@ -66,6 +66,9 @@ export default function MenuPage() {
                       const imgSrc = resolveImage(
                         (item as { image?: string }).image
                       );
+                      const imagePosition = (
+                        item as { imagePosition?: string }
+                      ).imagePosition;
                       return (
                         <li
                           key={item.name}
@@ -76,6 +79,11 @@ export default function MenuPage() {
                             <img
                               src={imgSrc}
                               alt={item.name}
+                              style={
+                                imagePosition
+                                  ? { objectPosition: imagePosition }
+                                  : undefined
+                              }
                               className="aspect-square w-full object-cover"
                             />
                           ) : (

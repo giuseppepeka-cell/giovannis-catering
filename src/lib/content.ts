@@ -246,6 +246,12 @@ export const menu = {
           description: "Queso y pepperami crujiente.",
           image: "/menu/pepperami.jpg",
         },
+        {
+          name: "Della Nonna",
+          description: "Higos, tocino y queso ahumado.",
+          image: "/menu/della-nonna.jpg",
+          imagePosition: "50% 72%", // pizza sits low in the photo — shift crop down
+        },
       ],
     },
     {
