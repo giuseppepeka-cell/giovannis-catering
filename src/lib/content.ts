@@ -286,6 +286,12 @@ export const menu = {
           image: "/menu/focaccia.jpg",
         },
         {
+          name: "Papas 4 quesos",
+          description:
+            "Papas bañadas en salsa cremosa de roquefort, manchego, parmesano y mozzarella.",
+          image: "/menu/papas-4-quesos.jpg",
+        },
+        {
           name: "Limonada de frutos rojos",
           description:
             "Bebida refrescante de limonada infusionada con frutos rojos naturales.",
